@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ratingapp.ddey.com.testratingapp">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!--
+     PENTRU A ACCESA INTERNETUL // windowSoftInputMode hidden ca sa nu o arate aiurea android:largeHeap="true" si android:hardwareAccelerated="false"
+     sunt pt problema de upload a imaginilor -> explicatie: https://stackoverflow.com/questions/32244851/androidjava-lang-outofmemoryerror-failed-to-allocate-a-23970828-byte-allocatio
+    -->
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateHidden"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- <provider -->
+        <!-- android:name="android.support.v4.content.FileProvider" -->
+        <!-- android:authorities="au.com.example.AppA.fileprovider" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true" > -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="file" /> -->
+        <!-- </provider> -->
+
+        <provider
+            android:name=".utils.others.GenericFileProvider"
+            android:authorities="ratingapp.ddey.com.testratingapp.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <!-- GoogleMaps -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_API_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ui.auth.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.auth.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.NotesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.ViewPlaceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.GeneralMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.NearbyHotelsMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.ReviewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.HotelSearchInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.MyReviewsRatingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.ViewPublicProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.ViewProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activities.PieChartActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activities.ChartsActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:textViewStyle">@style/light_textview</item>
+        <item name="android:buttonStyle">@style/light_btn</item>
+        <item name="android:radioButtonStyle">@style/light_rbtext</item>
+        <item name="android:spinnerItemStyle">@style/light_spinner</item>
+        <item name="editTextStyle">@style/MyCustomEditTextStyle</item>
+
+    </style>
+
+    <style name="light_textview" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="light_btn" parent="android:Widget.Button">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="light_rbtext" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="light_spinner" parent="android:Widget.Spinner">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:color">#8BC34A</item>
+    </style>
+
+    <style name="MyCustomEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+</resources>

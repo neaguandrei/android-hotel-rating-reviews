@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">HotelRater</string>
+
+
+    <!-- Arrays filters + edit profile -->
+    <string-array name="arrays_rating">
+        <item>All</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3.5</item>
+        <item>4</item>
+        <item>4.5</item>
+    </string-array>
+
+    <string-array name="family_array">
+        <item> </item>
+        <item>Family (1 kid)</item>
+        <item>Family (2+ kids)</item>
+        <item>Business</item>
+        <item>Couple</item>
+        <item>Single</item>
+    </string-array>
+
+    <string-array name="countries_array">
+        <item> </item>
+        <item>Romania</item>
+        <item>England</item>
+        <item>Germany</item>
+        <item>Bulgaria</item>
+        <item>Russia</item>
+    </string-array>
+
+    <string-array name="cities_array">
+        <item>All</item>
+        <item>Bucharest</item>
+        <item>Brasov</item>
+        <item>Constanta</item>
+    </string-array>
+
+    <!-- Arrays chart -->
+
+    <string-array name="view_chart_array">
+        <!--<item>Reviews related bar chart</item>-->
+        <item>Ratings related bar chart</item>
+        <item>Reviews related line chart</item>
+    </string-array>
+
+    <!-- Google maps -->
+    <string name="google_maps_API_key">AIzaSyB1IkhBtQhXItMjslFNp3Poy3_dPNdAFuE</string>
+    <!-- Strings related to login -->
+    <string name="nav_menu_home">Home</string>
+    <string name="nav_menu_search">Search</string>
+    <string name="nav_menu_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nav_favourites">Favourites</string>
+    <string name="message_logout_profile">Succesfully logged out</string>
+    <string name="btn_login">Login</string>
+    <string name="sign_up_tv_login">Don\'t have an account? Sign up here!</string>
+    <string name="email_profile">E-mail</string>
+    <string name="birth_date_profile">Birth date (dd-MM-yyyy)</string>
+    <string name="gender_profile">Gender:</string>
+    <string name="male_profile">Male</string>
+    <string name="female_profile">Female</string>
+    <string name="country_profile">Country:</string>
+    <string name="profile_activity_email_error">Email is not in correct format!</string>
+    <string name="date_format_error">Date format isn\'t correct. Use (dd-MM-yyyy)!</string>
+    <string name="test_tv_itemslist">testTV</string>
+    <string name="error_password_login">Password error! At least 6 characters!</string>
+    <string name="error_email_login">E-mail error occured! Check format or don\'t leave it empty!</string>
+    <string name="signup_name">Name</string>
+    <string name="signup_email">Email</string>
+    <string name="signup_password">Password</string>
+    <string name="signup_confirmpassword">Confirm password</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="signup_tv_return_to_login">Already have an account? Login</string>
+    <string name="signup_error_name">Introduce name</string>
+    <string name="signup_error_password">Introduce password with minimum 6 letters</string>
+    <string name="signup_error_password_match">Make sure the passwords match!</string>
+    <string name="login_email_text">Email</string>
+    <string name="login_password_text">Password</string>
+    <string name="about_tv_1">Hotel Rating System Application</string>
+    <string name="about_tv_2">Version: 1.0</string>
+    <string name="about_tv_3">Creator: Neagu Andrei-Cosmin</string>
+    <string name="about_tv_4">Licenta 2019</string>
+    <string name="maps_search_bracket">Enter address, city or zip code</string>
+
+    <string name="select_action">Select action</string>
+    <string name="select_photo_gallery">Select photo from gallery</string>
+    <string name="capture_photo_camera">Take a new photo</string>
+</resources>

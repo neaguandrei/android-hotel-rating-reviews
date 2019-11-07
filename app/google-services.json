@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "387103825977",
+    "firebase_url": "https://testratingapp-5b923.firebaseio.com",
+    "project_id": "testratingapp-5b923",
+    "storage_bucket": "testratingapp-5b923.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387103825977:android:77ca731d6289896f",
+        "android_client_info": {
+          "package_name": "ratingapp.ddey.com.testratingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387103825977-rbfkeu8i9futhg1ll759qb3850sr8s6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBie8GElY1LRA4hNqcXZQcnd58iXZy1bYk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
